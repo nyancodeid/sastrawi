@@ -2,8 +2,6 @@
 
 namespace SastrawiFunctionalTest\Stemmer;
 
-use PHPUnit\Framework\Attributes\DataProvider;
-use PHPUnit\Framework\Attributes\Test;
 use Sastrawi\Dictionary\ArrayDictionary;
 use Sastrawi\Stemmer\Stemmer;
 
@@ -43,8 +41,9 @@ class StemmerTest extends \PHPUnit\Framework\TestCase
         $this->stemmer = new Stemmer($this->dictionary);
     }
 
-    #[Test]
-    #[DataProvider('stemDataProvider')]
+    /**
+     * @dataProvider stemDataProvider
+     */
     public function testStem($word, $stem)
     {
         $this->assertSame($stem, $this->stemmer->stem($word));

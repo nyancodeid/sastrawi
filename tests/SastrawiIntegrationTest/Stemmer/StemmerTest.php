@@ -2,8 +2,6 @@
 
 namespace SastrawiIntegrationTest\Stemmer;
 
-use PHPUnit\Framework\Attributes\DataProvider;
-use PHPUnit\Framework\Attributes\Test;
 use Sastrawi\Stemmer\StemmerFactory;
 
 class StemmerTest extends \PHPUnit\Framework\TestCase
@@ -16,8 +14,9 @@ class StemmerTest extends \PHPUnit\Framework\TestCase
         $this->stemmer = $stemmerFactory->createStemmer(false);
     }
 
-    #[Test]
-    #[DataProvider('stemDataProvider')]
+    /**
+     * @dataProvider stemDataProvider
+     */
     public function testStem($word, $stem)
     {
         $this->assertSame($stem, $this->stemmer->stem($word));
