@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 26b
  * Rule 26b : pem{rV|V} -> pe-p{rV|V}
  */
-class DisambiguatorPrefixRule26bTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule26bTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule26b();
     }

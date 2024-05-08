@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 28a
  * Rule 28a : pen{V} -> pe-n{V}
  */
-class DisambiguatorPrefixRule28aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule28aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule28a();
     }

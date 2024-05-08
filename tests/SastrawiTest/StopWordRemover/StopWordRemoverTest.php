@@ -5,9 +5,9 @@ namespace SastrawiTest\StopWordRemover;
 use Sastrawi\StopWordRemover\StopWordRemover;
 use Sastrawi\Dictionary\ArrayDictionary;
 
-class StopWordRemoverTest extends \PHPUnit_Framework_TestCase
+class StopWordRemoverTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->dictionary = new ArrayDictionary(array('di', 'ke'));
         $this->stopWordRemover = new StopWordRemover($this->dictionary);

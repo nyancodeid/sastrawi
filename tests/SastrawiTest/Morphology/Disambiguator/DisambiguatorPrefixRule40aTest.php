@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 40a : CinV -> CinV
  */
 
-class DisambiguatorPrefixRule40aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule40aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule40a();
     }

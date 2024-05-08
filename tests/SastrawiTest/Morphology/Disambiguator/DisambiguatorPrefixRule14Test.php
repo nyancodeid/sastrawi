@@ -20,9 +20,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Original CS Rule no 14 was : men{c|d|j|z} -> men-{c|d|j|z}
  */
 
-class DisambiguatorPrefixRule14Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule14Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule14();
     }

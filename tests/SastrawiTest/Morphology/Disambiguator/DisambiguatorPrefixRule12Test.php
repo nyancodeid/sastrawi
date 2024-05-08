@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Nazief and Adriani Rule 12 : mempe{r|l} -> mem-pe{r|l}
  * Modified by Jelita Asian's CS Rule 12 : mempe -> mem-pe to stem mempengaruhi
  */
-class DisambiguatorPrefixRule12Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule12Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule12();
     }

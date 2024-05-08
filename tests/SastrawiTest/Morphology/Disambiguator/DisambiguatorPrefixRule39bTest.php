@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 39b : CemV -> CV
  */
 
-class DisambiguatorPrefixRule39bTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule39bTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule39b();
     }

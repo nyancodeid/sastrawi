@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 20
  * Rule 20 : pe{w|y}V -> pe-{w|y}V
  */
-class DisambiguatorPrefixRule20Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule20Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule20();
     }

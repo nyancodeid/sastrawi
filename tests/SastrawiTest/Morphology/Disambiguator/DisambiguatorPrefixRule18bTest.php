@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Original Rule 18 : menyV -> meny-sV
  * Modified by CC (shifted into 18b, see also 18a)
  */
-class DisambiguatorPrefixRule18bTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule18bTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule18b();
     }

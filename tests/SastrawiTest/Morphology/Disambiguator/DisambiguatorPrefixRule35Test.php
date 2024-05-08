@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 35 : terC1erC2 -> ter-C1erC2 where C1 != {r}
  */
 
-class DisambiguatorPrefixRule35Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule35Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule35();
     }

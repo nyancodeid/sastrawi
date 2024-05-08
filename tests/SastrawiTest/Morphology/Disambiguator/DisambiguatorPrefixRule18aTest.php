@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 18a
  * CC Rule 18a : menyV -> me-nyV to stem menyala -> nyala
  */
-class DisambiguatorPrefixRule18aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule18aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule18a();
     }

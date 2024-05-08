@@ -4,11 +4,11 @@ namespace SastrawiTest\Dictionary;
 
 use Sastrawi\Dictionary\ArrayDictionary;
 
-class ArrayDictionaryTest extends \PHPUnit_Framework_TestCase
+class ArrayDictionaryTest extends \PHPUnit\Framework\TestCase
 {
     protected $dictionary;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->dictionary = new ArrayDictionary();
     }

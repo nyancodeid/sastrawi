@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 24
  * Rule 24 : perCAerV -> per-CAerV where C != 'r'
  */
-class DisambiguatorPrefixRule24Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule24Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule24();
     }

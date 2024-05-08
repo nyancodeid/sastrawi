@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 17c
  * Rule 17c : mengV -> mengV- where V = 'e'
  */
-class DisambiguatorPrefixRule17cTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule17cTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule17c();
     }

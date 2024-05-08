@@ -14,9 +14,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Modified by CC, shifted to 31b
  */
 
-class DisambiguatorPrefixRule31bTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule31bTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule31b();
     }

@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Original Rule 19 : mempV -> mem-pV where V != 'e'
  * Modified Rule 19 by ECS : mempA -> mem-pA where A != 'e' in order to stem memproteksi
  */
-class DisambiguatorPrefixRule19Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule19Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule19();
     }

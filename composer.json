@@ -1,5 +1,5 @@
 {
-    "name": "sastrawi/sastrawi",
+    "name": "nyancodeid/sastrawi",
     "type": "library",
     "description": "PHP library for stemming Indonesian language (Bahasa Indonesia)",
     "keywords": [
@@ -10,21 +10,27 @@
         "kata dasar",
         "root word"
     ],
-    "homepage": "https://github.com/sastrawi/sastrawi",
+    "homepage": "https://github.com/nyancodeid/sastrawi",
     "authors": [
         {
             "name": "Andy Librian",
             "email": "andylibrian@gmail.com",
             "homepage": "http://andylibrian.com",
             "role": "Lead Developer"
+        },
+        {
+            "name": "Ryan Aunur Rassyid",
+            "email": "ryandevstudio@gmail.com",
+            "homepage": "http://github.com/nyancodeid",
+            "role": "Updated Developer"
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=8.0"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "~1.0",
-        "phpunit/phpunit": "4.8.7"
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpunit/phpunit": "11.1.3"
     },
     "autoload": {
         "psr-0": {
@@ -35,8 +41,8 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "support": {
-        "issues": "https://github.com/sastrawi/sastrawi/issues",
-        "source": "https://github.com/sastrawi/sastrawi"
+        "issues": "https://github.com/nyancodeid/sastrawi/issues",
+        "source": "https://github.com/nyancodeid/sastrawi"
     },
     "extra": {
         "branch-alias": {

@@ -2,9 +2,9 @@
 
 namespace SastrawiTest\Morphology;
 
-class InvalidAffixPairSpecificationTest extends \PHPUnit_Framework_TestCase
+class InvalidAffixPairSpecificationTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->specification = new \Sastrawi\Morphology\InvalidAffixPairSpecification();
     }

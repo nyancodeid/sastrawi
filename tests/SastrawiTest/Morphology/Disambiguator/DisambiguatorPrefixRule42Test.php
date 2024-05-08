@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 42 : kauA -> kau-A
  */
 
-class DisambiguatorPrefixRule42Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule42Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule42();
     }

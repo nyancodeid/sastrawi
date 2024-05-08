@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
 * Disambiguate Prefix Rule 2
 * Rule 2 : berCAP -> ber-CAP where C != 'r' AND P != 'er'
 */
-class DisambiguatorPrefixRule2Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule2Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule2();
     }

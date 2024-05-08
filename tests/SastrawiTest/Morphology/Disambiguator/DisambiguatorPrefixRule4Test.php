@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
 * Disambiguate Prefix Rule 4
 * Rule 4 : belajar -> bel-ajar
 */
-class DisambiguatorPrefixRule4Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule4Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule4();
     }

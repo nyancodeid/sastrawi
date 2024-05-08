@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 7
  * Rule 7 : terCerv -> ter-CerV where C != 'r'
  */
-class DisambiguatorPrefixRule7Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule7Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule7();
     }

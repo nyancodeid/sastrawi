@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Original Nazief and Adriani's Rule 16 : meng{g|h|q} -> meng-{g|h|q}
  * Modified Jelita Asian's CS Rule 16 : meng{g|h|q|k} -> meng-{g|h|q|k} to stem mengkritik
  */
-class DisambiguatorPrefixRule16Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule16Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule16();
     }

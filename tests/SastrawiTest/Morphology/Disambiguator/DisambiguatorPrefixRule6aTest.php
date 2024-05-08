@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 6a
  * Rule 6a : terV -> ter-V
  */
-class DisambiguatorPrefixRule6aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule6aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule6a();
     }

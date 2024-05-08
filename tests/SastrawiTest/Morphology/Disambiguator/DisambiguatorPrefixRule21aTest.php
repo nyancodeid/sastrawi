@@ -12,9 +12,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Disambiguate Prefix Rule 21a
  * Rule 21a : perV -> per-V
  */
-class DisambiguatorPrefixRule21aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule21aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule21a();
     }

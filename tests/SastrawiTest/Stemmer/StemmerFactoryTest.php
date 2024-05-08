@@ -4,11 +4,11 @@ namespace SastrawiTest\Stemmer;
 
 use Sastrawi\Stemmer\StemmerFactory;
 
-class StemmerFactoryTest extends \PHPUnit_Framework_TestCase
+class StemmerFactoryTest extends \PHPUnit\Framework\TestCase
 {
     protected $factory;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->factory = new StemmerFactory();
     }

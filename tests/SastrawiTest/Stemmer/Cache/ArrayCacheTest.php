@@ -2,11 +2,11 @@
 
 namespace SastrawiTest\Stemmer\Cache;
 
-class ArrayCacheTest extends \PHPUnit_Framework_TestCase
+class ArrayCacheTest extends \PHPUnit\Framework\TestCase
 {
     protected $arrayCache;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->arrayCache = new \Sastrawi\Stemmer\Cache\ArrayCache();
     }

@@ -5,13 +5,13 @@ namespace SastrawiTest\Stemmer;
 use Sastrawi\Stemmer\Stemmer;
 use Sastrawi\Dictionary\ArrayDictionary;
 
-class StemmerTest extends \PHPUnit_Framework_TestCase
+class StemmerTest extends \PHPUnit\Framework\TestCase
 {
     protected $dictionary;
 
     protected $stemmer;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->dictionary = new ArrayDictionary(array('beri'));
         $this->stemmer = new Stemmer($this->dictionary);

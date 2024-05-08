@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 15a : men{V} -> me-n{V}
  */
 
-class DisambiguatorPrefixRule15aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule15aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule15a();
     }

@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 13b : mem{rV|V} -> me-p{rV|V}
  */
 
-class DisambiguatorPrefixRule13bTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule13bTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule13b();
     }

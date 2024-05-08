@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * CC Rule 31a : penyV -> pe-nyV
  */
 
-class DisambiguatorPrefixRule31aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule31aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule31a();
     }

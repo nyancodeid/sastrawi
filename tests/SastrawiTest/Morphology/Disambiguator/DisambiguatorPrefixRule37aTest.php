@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 37a : CerV -> CerV
  */
 
-class DisambiguatorPrefixRule37aTest extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule37aTest extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule37a();
     }

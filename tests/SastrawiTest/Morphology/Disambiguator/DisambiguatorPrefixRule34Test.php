@@ -13,9 +13,9 @@ namespace SastrawiTest\Morphology\Disambiguator;
  * Rule 34 : peCP -> pe-CP where C != {r|w|y|l|m|n} and P != 'er'
  */
 
-class DisambiguatorPrefixRule34Test extends \PHPUnit_Framework_TestCase
+class DisambiguatorPrefixRule34Test extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new \Sastrawi\Morphology\Disambiguator\DisambiguatorPrefixRule34();
     }
